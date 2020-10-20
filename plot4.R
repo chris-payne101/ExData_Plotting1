@@ -39,7 +39,7 @@ library(lubridate)
 hpc$DateTime <- dmy_hms(paste(hpc$Date, hpc$Time))
 
 ## Enable a 4x4 plot
-png("plot4.png")
+png("plot4.png", height = 480, width = 480)
 par(mfrow=c(2,2))
 
 ## plot1

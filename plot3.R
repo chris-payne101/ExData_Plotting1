@@ -38,7 +38,7 @@ library(lubridate)
 ## create datetime column
 hpc$DateTime <- dmy_hms(paste(hpc$Date, hpc$Time))
 
-png("plot3.png")
+png("plot3.png", height = 480, width = 480)
 plot(hpc$DateTime,hpc$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
 lines(hpc$DateTime,hpc$Sub_metering_2,col="red")
 lines(hpc$DateTime,hpc$Sub_metering_3,col="blue")

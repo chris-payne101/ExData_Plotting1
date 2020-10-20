@@ -38,6 +38,6 @@ library(lubridate)
 ## create datetime column
 hpc$DateTime <- dmy_hms(paste(hpc$Date, hpc$Time))
 
-png("plot2.png")
+png("plot2.png", height = 480, width = 480)
 plot(hpc$DateTime,hpc$Global_active_power,type="l",xlab="",ylab="Global Active Power(kilowatts)")
 dev.off()

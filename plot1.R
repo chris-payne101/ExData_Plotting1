@@ -33,6 +33,6 @@ hpc <- read.table("household_power_consumption.txt",sep=";"
 ## Create required png file
 ##################################################################
 
-png("plot1.png")
+png("plot1.png", height = 480, width = 480)
 hist(hpc$Global_active_power,col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off()
